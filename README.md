@@ -1,4 +1,2 @@
 # Login & Register whith OTP
-forget password
-reset password
-
+forget password and reset password
