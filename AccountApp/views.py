@@ -27,8 +27,8 @@ class Register(View):
             print(code)
             OTP.objects.filter(username=cd['username']).delete()
             OTP.objects.create(username=cd['username'], code=code)
-            if '@gmail' and '@email' in cd['username']:
-                send_mail(
+            if '@gmail' and '@email' in cd['username']:  # بعد از ثبت سامانه پیامک 
+                send_mail(                               # and به or  تبدیل کنید
                     'Welcome to Shop',
                     f'Your OTP code is {code}',
                     'AshkanGhodrati01@gmail.com',
