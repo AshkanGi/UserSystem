@@ -31,7 +31,7 @@ class Register(View):
                 send_mail(                               # and به or  تبدیل کنید
                     'Welcome to Shop',
                     f'Your OTP code is {code}',
-                    'AshkanGhodrati01@gmail.com',
+                    'Example@gmail.com',                 # ایمیل ادمین
                     [cd['username']]
                 )
             else:
